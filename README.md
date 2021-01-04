@@ -4,7 +4,7 @@
 reach the place of delivery, taking into account the route, weather 
 conditions, distance traveled?
 
-Сonditions: *courier goes only on foot*
+**Conditions**: the courier travels only on foot
 
 **Sub-questions**:  
 
@@ -50,4 +50,3 @@ Week 01, 2021:
 *Report reqs*: your report must contain your ideal dataset and describe
 why you choose the exact variables. You must write your report in `.md`
 format and save it to `Github` as an update to `readme.md` file.
-
