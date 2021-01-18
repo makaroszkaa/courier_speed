@@ -20,7 +20,8 @@ Project **plan:**
 * answer the questions
 * define the variables for the model
 * get data - done
-* data cleansing (remove from the track the moment where the courier travels, but does not go) - [x] done
+* data cleansing (remove from the track the moment where the courier travels, but does not go) 
+- [x] done
 * data analysis
 * model writing
 * model training
