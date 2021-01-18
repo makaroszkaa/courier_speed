@@ -8,9 +8,9 @@ to the place of delivery, taking into account the route, weather conditions, dis
 **Sub-questions:**
 
 1. How to clear the data from the courier speed parameter where he did not go, but was driving?  
-- [ x ] done, the maximum speed of the person is taken  
+- [x] done, the maximum speed of the person is taken  
 2. How to find out the weather condition from GPS data at the time of the route?  
-- [ x ] done, we took weather data and added date and time using a key   
+- [x] done, we took weather data and added date and time using a key   
 3. How to train the model to predict speed based on weather conditions?  
 4. What data to prepare for model training?  
 5. Which model to choose for forecasting?  
@@ -37,7 +37,7 @@ Project **plan:**
 4. write a short report for the week and make a work plan for the next.  
 
 Performed:
-- [ x ] factorial variables for the model are defined
+- [x] factorial variables for the model are defined
 
 ## Factor variables needed to build a model:
 1. height difference (H1-H2);  
