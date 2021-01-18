@@ -8,9 +8,9 @@ to the place of delivery, taking into account the route, weather conditions, dis
 **Sub-questions:**
 
 1. How to clear the data from the courier speed parameter where he did not go, but was driving?  
-- [] done, the maximum speed of the person is taken  
+- [ ] done, the maximum speed of the person is taken  
 2. How to find out the weather condition from GPS data at the time of the route?  
-- [] done, we took weather data and added date and time using a key   
+- [ ] done, we took weather data and added date and time using a key   
 3. How to train the model to predict speed based on weather conditions?  
 4. What data to prepare for model training?  
 5. Which model to choose for forecasting?  
