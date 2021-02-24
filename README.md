@@ -52,6 +52,3 @@ Determining the distance for each route (id) using the Haversin formula;
 -     write a short report for the week and make a work plan for the next.  
 
 
-<br />
-<br />
-[institutions]: https://www.healthline.com/health/exercise-fitness/average-walking-speed
