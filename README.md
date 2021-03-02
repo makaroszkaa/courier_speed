@@ -104,7 +104,7 @@ statistics with the `describe` function:
 # output statistics for the speed column
 courier_data['speed'].describe()
 ```
-![GitHub Logo](C:\Users\hrypo\OneDrive\Изображения\Alabama-Hills-California-USA-mountain-snow-sunset-purple_2560x1600.jpg)
+![GitHub Logo](C:/Users/hrypo/OneDrive/Изображения/Alabama-Hills-California-USA-mountain-snow-sunset-purple_2560x1600.jpg)
 
 <br\>
 <br\>
