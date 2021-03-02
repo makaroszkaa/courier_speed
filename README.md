@@ -75,9 +75,17 @@ To prepare data for building a regression model, you need detect and process
 outliers. This is done so that the model is as accurate as possible, otherwise
 outliers can adversely affect accuracy models.
 
-When studying factorial variables, the columns 'dele' and 'speed' potentially
+When studying factorial variables, the columns `dele` and `speed` potentially
 outliers arising from incorrect data can be detected. Finding them will be
 supported by mathematical methods and visualization.
+
+Open the finished file from the first part. The file is located at the [link].
+Identify emissions with the help of *Identifying Outliers with Interquartile 
+Range (IQR)* (interquartile range). This method is represented by the formula 
+`IQR = Q3 - Q1`. The interquartile range shows how the data is distributed
+relative to the median. It is less susceptible to outliers than the range, and 
+therefore may be more useful.
+
 
 
 
@@ -87,4 +95,5 @@ supported by mathematical methods and visualization.
 [Wikipedia]: https://en.wikipedia.org/wiki/Walking
 [source]: https://rp5.ru/%D0%9F%D0%BE%D0%B3%D0%BE%D0%B4%D0%B0_%D0%B2_%D0%BC%D0%B8%D1%80%D0%B5
 [this script]: https://github.com/makaroszkaa/courier_speed/blob/main/raw_data_transform.py
-[here]: https://github.com/makaroszkaa/courier_speed/blob/main/linear_regression_model.py
+[here]: https://github.com/makaroszkaa/courier_speed/blob/main/raw_data_transform.py
+[link] : https://github.com/makaroszkaa/courier_speed/blob/main/linear_regression_model.py
