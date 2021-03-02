@@ -122,7 +122,7 @@ After processing the emissions, we will perform an exploratory analysis -- **exp
 data analysis**, in which you will find a `correlation` between the variables.
 
 Use the **Heat Maps**, the graph shows that the speed mostly depends on 
-from the distance traveled,(`-0,94` coefficient indicates a strong correlation 
+from the distance traveled,(**-0,94** coefficient indicates a strong correlation 
 between speed and distance, the greater the courier passed away, the less 
 the speed and Vice versa), the graph shows that the change in elevation on the speed and 
 the temperature on the velocity of impact is very weak. 
