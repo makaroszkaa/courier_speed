@@ -86,7 +86,20 @@ Range (IQR)** (interquartile range). This method is represented by the formula
 relative to the median. It is less susceptible to outliers than the range, and 
 therefore may be more useful.
 
+We upload the obtained *IQR* results, which will be used to detect
+outliers. The value in the columns `True` indicates the presence of an outlier.
 
+Another method of detecting outliers is **identification with asymmetry**.
+Ideally, the skewness value should be in the range from `-1 to +1`, and
+any significant deviation from this range indicates the presence
+of extreme values. For the `speed` column, the coefficient value is **-1.5**,
+which means clearly indicates the presence of outliers. We will also output the
+statistics with the `describe` function:
+
+```python
+# output statistics for the speed column
+courier_data['speed'].describe()
+```
 
 
 <br\>
