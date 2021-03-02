@@ -162,8 +162,8 @@ Now we can build a model.
 - After building the model, the question arises, how correctly interpret the result?
 
 First of all, you should pay attention to the column with the name `p-value`. 
-`P-value` shows the statistical significance of the model. It is important that the
-`p-value` coefficient is less than *0.05*, since the lower the `p-value`, the 
+P-value shows the statistical significance of the model. It is important that the
+p-value coefficient is less than *0.05*, since the lower the p-value, the 
 better the result. In the table, the *temperature* predictor is greater than *0.05*
 and does not depend on the `speed`, so we discard it.
 
