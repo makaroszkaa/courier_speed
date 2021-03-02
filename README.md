@@ -151,15 +151,47 @@ warnings.filterwarnings('ignore')
 from tkinter import font
 import matplotlib.font_manager as font_manager
 ```
+We determine which values in the columns will be dependent and independent 
+variables. The dependent variable is `speed`, and the predictors are *distance*, 
+*temperature*, *longitude*, *latitude*, *altitude change*, and *time*. Next, we divide the
+data set into training and testing data. This means that **20%** of the test data will
+be randomly selected and separated from the training data.
 
+Now we can build a model. 
 
+- After building the model, the question arises, how correctly interpret the result?
 
+First of all, you should pay attention to the column with the name `p-value`. 
+`P-value` shows the statistical significance of the model. It is important that the
+`p-value` coefficient is less than *0.05*, since the lower the `p-value`, the 
+better the result. In the table, the *temperature* predictor is greater than *0.05*
+and does not depend on the `speed`, so we discard it.
 
-<br\>
-<br\>
+In the model, `R squared is 90%` of the variance, which is really a lot.
+Now let's build another model, but without a statistically significant result
+`trip_tc`. We can see that now all the predictors are statistically significant
+and R squared is still good. 
+
+Let's build a diagram of the model. The actual and predicted estimates have almost perfect linearity.
+
+So, to sum up, the best model will have:
+
+- p-value<0.05
+- smaller errors
+- higher adjusted R squared.
+___
+
+### Errors
+
+The last step is to inspect the **errors**. The errors are also minor. 
+The values of the small error metric indicate good predictive ability,
+while the large values indicate the opposite. 
+If you want to know what MSE, RMSE or MAPE is, you can read [this] article.
+
 
 [Wikipedia]: https://en.wikipedia.org/wiki/Walking
 [source]: https://rp5.ru/%D0%9F%D0%BE%D0%B3%D0%BE%D0%B4%D0%B0_%D0%B2_%D0%BC%D0%B8%D1%80%D0%B5
 [this script]: https://github.com/makaroszkaa/courier_speed/blob/main/raw_data_transform.py
 [here]: https://github.com/makaroszkaa/courier_speed/blob/main/raw_data_transform.py
 [link]: https://github.com/makaroszkaa/courier_speed/blob/main/linear_regression_model.py
+[this]: https://www.dataquest.io/blog/understanding-regression-error-metrics/
