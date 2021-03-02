@@ -20,6 +20,7 @@ Project plan:
 4. make tidy dataset;  
 5. make linear model;
 6. test model performance;
+___
 
 ### Ideal dataset
 
@@ -36,6 +37,7 @@ slower. Thus, another features is **temperature**.
 There should also be direct connection from travelled distance to the speed.
 Walking long distances in high tempo is most likely not possible for a courier.
 The third feature is **travelled distance**.
+___
 
 ### Data collection
 
@@ -45,12 +47,14 @@ altitude and speed. We convert GPX tracks to data frame for each trip and then
 bind all trips into one bigger data frame.
 
 The code for raw data collection and transformation is in [this script].
+___
 
 #### Sub-question 1: split walking from using transport
 
 Walking person max speed is **7.82** kph according to [Wikipedia]. This
 project considers any speed above mentioned value some kind of transporting:
 driving a car, some kind of public transport etc.
+___
 
 #### Sub-question 2: is it possible to obtain weather conditions?
 
@@ -68,6 +72,7 @@ columns with features, which we have not thought of before:
 - convert speed to *kph*;  
 
 The link to the script is [here] in lines *61 -- 151*.
+___
 
 ### Exploratory data analysis
 
