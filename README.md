@@ -20,7 +20,8 @@ Project plan:
 4. make tidy dataset;  
 5. make linear model;
 6. test model performance;
-___
+
+***
 
 ### Ideal dataset
 
