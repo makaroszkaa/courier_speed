@@ -113,7 +113,7 @@ The outlier is observed outside the overall distribution pattern.
 After the outliers have been found and presented graphically, they need to be
 *processed*. We will do this using the **Quantile-based Flooring and method
 Capping**. After applying this method, the skewness value
-improved significantly `-1.14`. Apply all the same for the `dele` column.
+improved significantly **-1.14**. Apply all the same for the `dele` column.
 ___
 
 ### Exploratory data analysis
