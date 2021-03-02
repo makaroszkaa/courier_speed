@@ -73,7 +73,7 @@ columns with features, which we have not thought of before:
 The link to the script is [here] in lines *61 -- 151*.
 ___
 
-### Exploratory data analysis
+### Preparing data for building a linear regression model
 
 To prepare data for building a regression model, you need detect and process
 outliers. This is done so that the model is as accurate as possible, otherwise
@@ -104,7 +104,56 @@ statistics with the `describe` function:
 # output statistics for the speed column
 courier_data['speed'].describe()
 ```
-![GitHub Logo][Alabama-Hills-California-USA-mountain-snow-sunset-purple_2560x1600]
+For a visual representation, we will identify outliers using visualization. The
+first graph is a **Box Plot**, which is often used to identify the distribution of 
+data and detect outliers. The graph shows the presence of a large number of 
+points, which indicates the presence of outliers. The second graph is a **histogram**.
+The outlier is observed outside the overall distribution pattern.
+
+After the outliers have been found and presented graphically, they need to be
+*processed*. We will do this using the **Quantile-based Flooring and method
+Capping**. After applying this method, the skewness value
+improved significantly `-1.14`. Apply all the same for the `dele` column.
+___
+
+### Exploratory data analysis
+
+After processing the emissions, we will perform an exploratory analysis -- **exploratory 
+data analysis**, in which you will find a `correlation` between the variables.
+
+Use the **Heat Maps**, the graph shows that the speed mostly depends on 
+from the distance traveled,(`-0,94` coefficient indicates a strong correlation 
+between speed and distance, the greater the courier passed away, the less 
+the speed and Vice versa), the graph shows that the change in elevation on the speed and 
+the temperature on the velocity of impact is very weak. 
+
+**Plotting a scatter plot**
+It shows the relationship between the speed of the courier and
+the distance traveled. Another pair plot graph shows a similar relationship.
+___
+
+### Building a regression model
+
+We load all the necessary libraries:
+
+```python
+from sklearn.linear_model import LinearRegression
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import mean_absolute_error
+import statsmodels.api as sm
+from statsmodels.tools.eval_measures import mse, rmse
+import warnings
+import math
+import scipy.stats as stats
+import scipy
+from sklearn.preprocessing import scale
+warnings.filterwarnings('ignore')
+from tkinter import font
+import matplotlib.font_manager as font_manager
+```
+
+
+
 
 <br\>
 <br\>
