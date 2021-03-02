@@ -48,14 +48,12 @@ altitude and speed. We convert GPX tracks to data frame for each trip and then
 bind all trips into one bigger data frame.
 
 The code for raw data collection and transformation is in [this script].
-___
 
 #### Sub-question 1: split walking from using transport
 
 Walking person max speed is **7.82** kph according to [Wikipedia]. This
 project considers any speed above mentioned value some kind of transporting:
 driving a car, some kind of public transport etc.
-___
 
 #### Sub-question 2: is it possible to obtain weather conditions?
 
