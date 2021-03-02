@@ -67,7 +67,7 @@ columns with features, which we have not thought of before:
 - rename columns;  
 - convert speed to *kph*;  
 
-The link to the script is [here] in lines *1 -- 74*.
+The link to the script is [here] in lines *61 -- 151*.
 
 ### Exploratory data analysis
 
@@ -80,8 +80,8 @@ outliers arising from incorrect data can be detected. Finding them will be
 supported by mathematical methods and visualization.
 
 Open the finished file from the first part. The file is located at the [link].
-Identify emissions with the help of *Identifying Outliers with Interquartile 
-Range (IQR)* (interquartile range). This method is represented by the formula 
+Identify emissions with the help of **Identifying Outliers with Interquartile 
+Range (IQR)** (interquartile range). This method is represented by the formula 
 `IQR = Q3 - Q1`. The interquartile range shows how the data is distributed
 relative to the median. It is less susceptible to outliers than the range, and 
 therefore may be more useful.
@@ -96,4 +96,4 @@ therefore may be more useful.
 [source]: https://rp5.ru/%D0%9F%D0%BE%D0%B3%D0%BE%D0%B4%D0%B0_%D0%B2_%D0%BC%D0%B8%D1%80%D0%B5
 [this script]: https://github.com/makaroszkaa/courier_speed/blob/main/raw_data_transform.py
 [here]: https://github.com/makaroszkaa/courier_speed/blob/main/raw_data_transform.py
-[link] : https://github.com/makaroszkaa/courier_speed/blob/main/linear_regression_model.py
+[link]: https://github.com/makaroszkaa/courier_speed/blob/main/linear_regression_model.py
